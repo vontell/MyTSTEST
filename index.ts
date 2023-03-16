@@ -52,7 +52,7 @@ export function configureBot(bot: RGBot) {
   // navigates back to their scoring location.
   bot.on(CTFEvent.FLAG_OBTAINED, async (collector: string) => {
     if (collector == bot.username()) {
-      await rgctfUtils.scoreFlag()
+      await rgctfUtils.scoreflag()
     }
   });
 
